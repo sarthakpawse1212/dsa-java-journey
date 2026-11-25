@@ -1,3 +1,47 @@
+/*
+ * ==========================================
+ *              LINEAR SEARCH
+ * ==========================================
+ *
+ * Definition:
+ * Linear Search (also known as Sequential Search) is a simple
+ * searching algorithm that finds the position of a target element
+ * by checking each element one by one from the beginning.
+ *
+ * How it works:
+ * 1. Start from the first element (index 0).
+ * 2. Compare the current element with the target value.
+ * 3. If a match is found, return its index.
+ * 4. Otherwise, move to the next element.
+ * 5. If the entire array is traversed without a match, return -1.
+ *
+ * Comparisons:
+ * - Best case: Only 1 comparison (element found at first index).
+ * - Worst case: N comparisons (element at last index or not found).
+ * - N = Total number of elements in the array.
+ *
+ * Time Complexity:
+ *
+ * Case          Complexity       Explanation
+ * ---------------------------------------------------------
+ * Best Case     O(1)             Target is at the first index.
+ * Average Case  O(n)             Target is somewhere in the array.
+ * Worst Case    O(n)             Target is at the last index
+ *                                or is not present.
+ *
+ * Space Complexity:
+ * O(1) - Uses constant extra space; no additional data
+ * structure is required.
+ *
+ * Important:
+ * - Works on both sorted and unsorted arrays.
+ * - No sorting is required before searching.
+ * - Suitable for small datasets.
+ * - For large sorted datasets, Binary Search can be more efficient.
+ *
+ * ==========================================
+ */
+
 package dsa.array;
 
 import java.util.Arrays;
